@@ -1,0 +1,22 @@
+# Activer la compression Gzip
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/rss+xml application/xml image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+</IfModule>
+
+# Réduire la mise en cache des images à 2 semaines
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 2 weeks"
+    ExpiresByType image/jpeg "access plus 2 weeks"
+    ExpiresByType image/png "access plus 2 weeks"
+    ExpiresByType image/gif "access plus 2 weeks"
+    ExpiresByType image/svg+xml "access plus 2 weeks"
+    ExpiresByType image/x-icon "access plus 2 weeks"
+</IfModule>
+
+# Définition de Cache-Control
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gif|svg|ico)$">
+        Header set Cache-Control "max-age=1209600, public"
+    </FilesMatch>
+</IfModule>

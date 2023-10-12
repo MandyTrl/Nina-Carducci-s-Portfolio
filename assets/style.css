@@ -276,6 +276,27 @@ input[type='submit'] {
 	padding: 0.5em 1em;
 }
 
+.mg-next,
+.mg-prev {
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 900;
+	color: #2c2423;
+}
+
+.mg-next:hover,
+.mg-prev:hover {
+	color: #beb45a;
+}
+
+.mg-next {
+	padding-left: 8px;
+}
+
+.mg-prev {
+	padding-right: 8px;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
