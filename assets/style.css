@@ -1,3 +1,32 @@
+@font-face {
+	font-family: Inter;
+	src: url(../fonts/Inter/Inter-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Spectral;
+	src: url(../fonts/Spectral/Spectral-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Spectral;
+	src: url(../fonts/Spectral/Spectral-LightItalic.ttf);
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: Spectral;
+	src: url(../fonts/Spectral/Spectral-MediumItalic.ttf);
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: Spectral;
+	src: url(../fonts/Spectral/Spectral-BoldItalic.ttf);
+	font-weight: 800;
+	font-style: italic;
+}
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -64,11 +93,6 @@ body {
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-}
-
-.nina {
-	width: 374px;
-	height: 329px;
 }
 
 .picture {
